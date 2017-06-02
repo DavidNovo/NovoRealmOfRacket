@@ -1,0 +1,5 @@
+#lang racket
+
+;; variables
+(define lower 1)
+(define upper 100)
