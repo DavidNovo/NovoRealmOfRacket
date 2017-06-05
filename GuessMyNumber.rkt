@@ -9,5 +9,24 @@
 
 ;; the computer guesses
 ;; there is no formal argument
+;; using binary searchg
+;; the result of this function is a number
 (define (guess)
   (quotient (+ lower upper) 2))
+
+;; changing the lower limit of guesses
+(define (smaller)
+  (set! upper (max lower (sub1 (guess))))
+  (guess))
+
+;; changing the upper bounds of guessing
+(define (bigger)
+  (set! lower (min upper (add1 (guess))))
+  (guess))
+
+;; main function
+(define (start n m)
+  (set! lower (min n m))
+  (set! upper (max n m))
+  (guess))
+
