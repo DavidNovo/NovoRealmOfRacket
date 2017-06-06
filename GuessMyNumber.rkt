@@ -30,3 +30,11 @@
   (set! upper (max n m))
   (guess))
 
+;; Tests
+(module+ test
+  (require rackunit rackunit/text-ui)
+
+  ;; basic tests
+  (check-equal? (guess) 50)
+  
+  )
