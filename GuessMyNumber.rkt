@@ -31,6 +31,10 @@
   (guess))
 
 ;; Tests
+;;;; to run the tests use the raco command on the command line
+;;;; ➜  NovoRealmOfRacket git:(master) raco test GuessMyNumber.rkt
+;;;; raco test: (submod "GuessMyNumber.rkt" test)
+;;;; 1 test passed
 (module+ test
   (require rackunit rackunit/text-ui)
 
